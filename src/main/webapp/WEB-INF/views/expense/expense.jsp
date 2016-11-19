@@ -33,7 +33,7 @@
 	<h4>
 		Expense
 	</h4>
-	<form:form method="POST" action="/ERPSoftware/expense/saveExpense.html"
+	<form:form method="POST" action="/expense/saveExpense.html"
 		name="cat">
 		<table>
 			<tr>
@@ -62,9 +62,9 @@
 					<td><c:out value="${id.index+1}" /></td>
 					<td><c:out value="${expense.expenseName}" /></td>
 					<td align="center"><a
-						href="/ERPSoftware/expense/editExpense.html?expenseId=${expense.expenseId}"><img src="${editImg}" /></a>
+						href="/expense/editExpense.html?expenseId=${expense.expenseId}"><img src="${editImg}" /></a>
 						| <a
-						href="/ERPSoftware/expense/deleteExpense.html?expenseId=${expense.expenseId}"
+						href="/expense/deleteExpense.html?expenseId=${expense.expenseId}"
 						onclick="return checkDelete()"><img src="${deleteImg}" /></a></td>
 				</tr>
 			</c:forEach>

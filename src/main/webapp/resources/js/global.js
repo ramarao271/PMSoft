@@ -23,7 +23,7 @@ function checkUpdate() {
 		return false;
 }
 function updateLinks(x) {
-	parent.load("/ERPSoftware/main/links/" + x);
+	parent.load("/main/links/" + x);
 }
 function resizeIframe(iframe) {
 	var addHeight = 20; // or whatever size is being cut off
@@ -44,51 +44,51 @@ function cleanup() {
 
 }
 function setPersonFields(val, name) {
-	document.personForm.action = "/ERPSoftware/" + name + "/contactperson"
+	document.personForm.action = "/" + name + "/contactperson"
 			+ name + "/" + val;
 	document.personForm.submit();
 }
 function setBankFields(val, name) {
-	document.personForm.action = "/ERPSoftware/" + name + "/bankAccounts"
+	document.personForm.action = "/" + name + "/bankAccounts"
 			+ name + "/" + val;
 	document.personForm.submit();
 }
 
 function setItemsFields(val, name) {
-	document.personForm.action = "/ERPSoftware/" + name + "/" + name
+	document.personForm.action = "/" + name + "/" + name
 			+ "ItemModules/" + val;
 	document.personForm.submit();
 }
 
 function setOrderDetails(val, name) {
-	document.personForm.action = "/ERPSoftware/" + name + "/" + name
+	document.personForm.action = "/" + name + "/" + name
 			+ "Details/" + parseLong(val);
 	document.personForm.submit();
 }
 function addVariant(name) {
-	document.productForm.action = "/ERPSoftware/" + name + "/addVariant.html";
+	document.productForm.action = "/" + name + "/addVariant.html";
 	document.productForm.submit();
 }
 function addRawMaterialVariant(name) {
-	document.rawMaterialForm.action = "/ERPSoftware/" + name + "/addRawMaterialVariant.html";
+	document.rawMaterialForm.action = "/" + name + "/addRawMaterialVariant.html";
 	document.rawMaterialForm.submit();
 }
 
 function addExpense(name) {
-	document.productForm.action = "/ERPSoftware/" + name + "/addExpense.html";
+	document.productForm.action = "/" + name + "/addExpense.html";
 	document.productForm.submit();
 }
 
 function addStage(name) {
-	document.productForm.action = "/ERPSoftware/" + name + "/addStage.html";
+	document.productForm.action = "/" + name + "/addStage.html";
 	document.productForm.submit();
 }
 function deleteVariant(vId) {
-	document.productForm.action = "/ERPSoftware/product/deleteVariant/" + vId;
+	document.productForm.action = "/product/deleteVariant/" + vId;
 	document.productForm.submit();
 }
 function deleteRawVariant(vId) {
-	document.productForm.action = "/ERPSoftware/rawMaterial/deleteRawVariant/"
+	document.productForm.action = "/rawMaterial/deleteRawVariant/"
 			+ vId;
 	document.productForm.submit();
 }
@@ -97,7 +97,7 @@ function loadVariant(name, value) {
 	if (value == '') {
 		value = document.getElementById("variantBeans0.variantType").value;
 	}
-	document.productForm.action = "/ERPSoftware/" + name + "/loadVariant/"
+	document.productForm.action = "/" + name + "/loadVariant/"
 			+ value;
 	document.productForm.submit();
 }
@@ -105,17 +105,17 @@ function loadRawMaterialVariant(name, value) {
 	if (value == '') {
 		value = document.getElementById("variantBeans0.variantType").value;
 	}
-	document.rawMaterialForm.action = "/ERPSoftware/" + name + "/loadRawMaterialVariant/"
+	document.rawMaterialForm.action = "/" + name + "/loadRawMaterialVariant/"
 			+ value;
 	document.rawMaterialForm.submit();
 }
 function deleteItemsFields(val, name) {
-	document.personForm.action = "/ERPSoftware/" + name + "/" + name
+	document.personForm.action = "/" + name + "/" + name
 			+ "updateItems/" + val;
 	document.personForm.submit();
 }
 function loadIndex(val) {
-	document.personForm.action = "/ERPSoftware/" + val + "/" + val
+	document.personForm.action = "/" + val + "/" + val
 			+ "/index.jsp";
 	document.personForm.method = "GET";
 	document.personForm.submit();
@@ -151,7 +151,7 @@ function showHideStage() {
 	document.getElementById("stag").visibility = "visible";
 }
 function changeStage(name) {
-	document.personForm.action = "/ERPSoftware/" + val + "/change" + val
+	document.personForm.action = "/" + val + "/change" + val
 			+ "stage.jsp";
 	document.personForm.method = "GET";
 	document.personForm.submit();

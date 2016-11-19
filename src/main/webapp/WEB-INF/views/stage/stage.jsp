@@ -33,7 +33,7 @@
 	<h4>
 		Stage
 	</h4>
-	<form:form method="POST" action="/ERPSoftware/stage/saveStage.html"
+	<form:form method="POST" action="/stage/saveStage.html"
 		name="cat">
 		<table>
 			<tr>
@@ -64,9 +64,9 @@
 					<td><c:out value="${stage.stageCode}" /></td>
 					<td><c:out value="${stage.stageName}" /></td>
 					<td align="center"><a
-						href="/ERPSoftware/stage/editStage.html?stageId=${stage.stageId}"><img src="${editImg}" /></a>
+						href="/stage/editStage.html?stageId=${stage.stageId}"><img src="${editImg}" /></a>
 						| <a
-						href="/ERPSoftware/stage/deleteStage.html?stageId=${stage.stageId}"
+						href="/stage/deleteStage.html?stageId=${stage.stageId}"
 						onclick="return checkDelete()"><img src="${deleteImg}" /></a></td>
 				</tr>
 			</c:forEach>

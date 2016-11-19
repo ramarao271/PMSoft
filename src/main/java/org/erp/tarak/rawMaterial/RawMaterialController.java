@@ -167,7 +167,7 @@ public class RawMaterialController {
 					multipartFile.getOriginalFilename().length());
 			File dest = new File(servletContext.getRealPath("/resources/images/")
 					+ File.separator + rawMaterial.getRawMaterialCode() + fileExt);
-			rawMaterial.setImagePath("/ERPSoftware/resources/images"
+			rawMaterial.setImagePath("/resources/images"
 					+ File.separator + rawMaterial.getRawMaterialCode() + fileExt);
 			multipartFile.transferTo(dest);
 			RawMaterialUtilities.saveRawMaterial(rawMaterial, rawMaterialService);

@@ -141,10 +141,10 @@ public class MainController {
 		return new ModelAndView("links", model);
 	}
 
-	@RequestMapping(value = "/ERPSoftware/resources/autocomplete/images/{d}", method = RequestMethod.GET)
+	@RequestMapping(value = "/resources/autocomplete/images/{d}", method = RequestMethod.GET)
 	protected ModelAndView autoComp(@PathVariable String d,
 			Map<String, Object> model) {
-		String x = "/ERPSoftware/resources/autocomplete/images/" + d;
+		String x = "/resources/autocomplete/images/" + d;
 		return new ModelAndView(x);
 	}
 

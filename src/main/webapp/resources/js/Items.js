@@ -31,7 +31,7 @@ function setRawMaterial(type, id, name, code, quantity, variantId, priceId) {
 	calculateCost();
 }
 function listInvoices(val, name) {
-	document.paymentForm.action = "/ERPSoftware/" + name + "Payment/list"
+	document.paymentForm.action = "/" + name + "Payment/list"
 			+ name + "Invoices/" + val;
 	document.paymentForm.submit();
 

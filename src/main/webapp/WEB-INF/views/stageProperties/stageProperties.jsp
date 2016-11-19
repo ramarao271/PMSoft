@@ -32,7 +32,7 @@
 <body onload="load()">
 	<h4>Stage Properties</h4>
 	<form:form method="POST"
-		action="/ERPSoftware/stageProperties/saveStageProperties.html"
+		action="/stageProperties/saveStageProperties.html"
 		name="cat">
 		<table>
 			<tr>
@@ -63,9 +63,9 @@
 					<td><c:out value="${id.index+1}" /></td>
 					<td><c:out value="${stageProperties.stagePropertiesName}" /></td>
 					<td align="center"><a
-						href="/ERPSoftware/stageProperties/editStageProperties.html?stagePropertiesId=${stageProperties.stagePropertiesId}"><img
+						href="/stageProperties/editStageProperties.html?stagePropertiesId=${stageProperties.stagePropertiesId}"><img
 							src="${editImg}" /></a> | <a
-						href="/ERPSoftware/stageProperties/deleteStageProperties.html?stagePropertiesId=${stageProperties.stagePropertiesId}"
+						href="/stageProperties/deleteStageProperties.html?stagePropertiesId=${stageProperties.stagePropertiesId}"
 						onclick="return checkDelete()"><img src="${deleteImg}" /></a></td>
 				</tr>
 			</c:forEach>

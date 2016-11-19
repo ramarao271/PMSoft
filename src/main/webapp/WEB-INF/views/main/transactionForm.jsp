@@ -20,14 +20,14 @@ table {
 <body>
 	<table cellspacing="0" >
 		<tr>
-			<td><a href="/ERPSoftware/salesorder/addSalesOrder.html"
+			<td><a href="/salesorder/addSalesOrder.html"
 				target="transactionFrame">Sales Orders</a></td>
 			<td><a
-				href="/ERPSoftware/deliverychallan/addDeliveryChallan.html"
+				href="/deliverychallan/addDeliveryChallan.html"
 				target="transactionFrame">Delivery Challans</a></td>
-			<td><a href="/ERPSoftware/salesinvoice/addSalesInvoice.html"
+			<td><a href="/salesinvoice/addSalesInvoice.html"
 				target="transactionFrame">Sales Invoice</a></td>
-			<td><a href="/ERPSoftware/salesPayment/addSalesPayment.html"
+			<td><a href="/salesPayment/addSalesPayment.html"
 				target="transactionFrame">Sales Payment</a></td>
 		</tr>
 		<tr>

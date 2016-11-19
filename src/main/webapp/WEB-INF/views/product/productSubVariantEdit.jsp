@@ -18,7 +18,7 @@
 <script type="text/javascript" src="${globaljs}"></script>
 <script type="text/javascript">
 	function setId(id) {
-		document.productForm.action = "/ERPSoftware/product/saveProductStages/"
+		document.productForm.action = "/product/saveProductStages/"
 				+ id;
 		document.productForm.submit();
 	}
@@ -26,7 +26,7 @@
 </head>
 <body>
 	<form:form method="POST"
-		action="/ERPSoftware/product/saveProductSubVariant.html"
+		action="/product/saveProductSubVariant.html"
 		modelAttribute="subVariantBean" name="productForm" id="productForm"
 		enctype="multipart/form-data">
 		<form:input path="productBean.productId" cssStyle="visibility:hidden"

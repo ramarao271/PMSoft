@@ -48,7 +48,7 @@
 							<c:forEach items="${cats}" var="cat">
 								<tr>
 									<%-- <td><a href="#" data-showpopup="${cat.variantId}"
-										data-url="/ERPSoftware/product/productWiseSales"><img
+										data-url="/product/productWiseSales"><img
 											class="arrowRotate" data-swap="${variantImg}"
 											src="${variantImg}" data-src="${variantmImg}" /></a></td>
 									 --%><td><c:out value="${cat.variantType}" /></td>

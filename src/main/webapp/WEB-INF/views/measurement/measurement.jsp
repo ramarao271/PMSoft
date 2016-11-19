@@ -33,7 +33,7 @@
 	<h4>
 		Measurement
 	</h4>
-	<form:form method="POST" action="/ERPSoftware/measurement/saveMeasurement.html"
+	<form:form method="POST" action="/measurement/saveMeasurement.html"
 		name="cat">
 		<table>
 			<tr>
@@ -61,9 +61,9 @@
 					<td><c:out value="${id.index+1}" /></td>
 					<td><c:out value="${measurement.measurementName}" /></td>
 					<td align="center"><a
-						href="/ERPSoftware/measurement/editMeasurement.html?measurementId=${measurement.measurementId}"><img src="${editImg}" /></a>
+						href="/measurement/editMeasurement.html?measurementId=${measurement.measurementId}"><img src="${editImg}" /></a>
 						| <a
-						href="/ERPSoftware/measurement/deleteMeasurement.html?measurementId=${measurement.measurementId}"
+						href="/measurement/deleteMeasurement.html?measurementId=${measurement.measurementId}"
 						onclick="return checkDelete()"><img src="${deleteImg}" /></a></td>
 				</tr>
 			</c:forEach>

@@ -33,7 +33,7 @@
 	<h4>
 		Category
 	</h4>
-	<form:form method="POST" action="/ERPSoftware/category/saveCategory.html"
+	<form:form method="POST" action="/category/saveCategory.html"
 		name="cat">
 		<table>
 			<tr>
@@ -64,9 +64,9 @@
 					<td><c:out value="${category.categoryCode}" /></td>
 					<td><c:out value="${category.categoryName}" /></td>
 					<td align="center"><a
-						href="/ERPSoftware/category/editCategory.html?categoryId=${category.categoryId}"><img src="${editImg}" /></a>
+						href="/category/editCategory.html?categoryId=${category.categoryId}"><img src="${editImg}" /></a>
 						| <a
-						href="/ERPSoftware/category/deleteCategory.html?categoryId=${category.categoryId}"
+						href="/category/deleteCategory.html?categoryId=${category.categoryId}"
 						onclick="return checkDelete()"><img src="${deleteImg}" /></a></td>
 				</tr>
 			</c:forEach>

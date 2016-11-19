@@ -14,7 +14,7 @@ function checkFrame()
 	var isInIframe = window.frameElement && window.frameElement.nodeName == "IFRAME";
 	if(isInIframe)
 		{
-			parent.location.href="/ERPSoftware/";
+			parent.location.href="/";
 		}
 }
 
@@ -25,7 +25,7 @@ function checkFrame()
 	<div id="content">
 		<div id="main">
 			<div class="full_w">
-				<spring:form action="/ERPSoftware/main/authenticate" method="post" commandName="userBean">
+				<spring:form action="/main/authenticate" method="post" commandName="userBean">
 					<label for="login">Username:</label>
 					<spring:input path="username" class="text" id="login" />
 					<label for="pass">Password:</label>

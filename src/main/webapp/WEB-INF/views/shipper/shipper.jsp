@@ -23,7 +23,7 @@
 			</c:if> Shipper Details</b>
 	</h3>
 	<form:form name="personForm" method="POST"
-		action="/ERPSoftware/shipper/saveShipper.html"
+		action="/shipper/saveShipper.html"
 		modelAttribute="shipperBean">
 		<table>
 			<tr>

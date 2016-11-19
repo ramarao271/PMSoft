@@ -34,7 +34,7 @@
 		document.getElementById("linksfrm").src = x;
 	}
 	function setFinYear(val) {
-		document.mainformx.action = "/ERPSoftware/main/year/" + val;
+		document.mainformx.action = "/main/year/" + val;
 		document.mainformx.submit();
 	}
 	
@@ -51,7 +51,7 @@
 					<p>
 						Welcome, <strong><spring:if test="${!empty userBean}">
 								<spring:out value="${userBean.username}" />
-							</spring:if>:</strong> [ <a href="/ERPSoftware/main/logout">logout</a> ]
+							</spring:if>:</strong> [ <a href="/main/logout">logout</a> ]
 					</p>
 				</div>
 				<div class="right">
@@ -67,81 +67,81 @@
 			</div>
 			<div id="nav">
 				<ul>
-				<li class="upp"><a id="myButton" href="/ERPSoftware/main/transactionForm.html">Transaction</a></li>
-					<li class="upp"><a href="/ERPSoftware/product/inventory"
+				<li class="upp"><a id="myButton" href="/main/transactionForm.html">Transaction</a></li>
+					<li class="upp"><a href="/product/inventory"
 						target="mainFrame">Inventory</a></li>
 					<li class="upp"><a href="#">StakeHolders</a>
 						<ul>
-							<li>&#8250; <a href="/ERPSoftware/customer/customer/"
+							<li>&#8250; <a href="/customer/customer/"
 								target="mainFrame">Customers</a></li>
-							<li>&#8250; <a href="/ERPSoftware/supplier/supplier/"
+							<li>&#8250; <a href="/supplier/supplier/"
 								target="mainFrame">Suppliers</a></li>
-							<li>&#8250; <a href="/ERPSoftware/shipper/shipper/"
+							<li>&#8250; <a href="/shipper/shipper/"
 								target="mainFrame">Shippers</a></li>
-							<li>&#8250; <a href="/ERPSoftware/worker/worker/"
+							<li>&#8250; <a href="/worker/worker/"
 								target="mainFrame">Workers</a></li>
 						</ul></li>
 					<li class="upp"><a href="#">Orders</a>
 						<ul>
-							<li>&#8250; <a href="/ERPSoftware/salesorder/salesorder/"
+							<li>&#8250; <a href="/salesorder/salesorder/"
 								target="mainFrame">Sales Orders</a></li>
 							<li>&#8250; <a
-								href="/ERPSoftware/purchaseorder/purchaseorder/"
+								href="/purchaseorder/purchaseorder/"
 								target="mainFrame">Purchase Orders</a></li>
 							<li>&#8250; <a
-								href="/ERPSoftware/productionorder/productionorder/"
+								href="/productionorder/productionorder/"
 								target="mainFrame">Production Orders</a></li>
 						</ul></li>
 
 					<li class="upp"><a
-						href="/ERPSoftware/deliverychallan/deliverychallan/"
+						href="/deliverychallan/deliverychallan/"
 						target="mainFrame">Delivery Challans</a></li>
 					<li class="upp"><a href="#">Invoice</a>
 						<ul>
 							<li>&#8250; <a
-								href="/ERPSoftware/salesinvoice/salesinvoice/"
+								href="/salesinvoice/salesinvoice/"
 								target="mainFrame">Sales Invoice</a></li>
 
 							<li>&#8250; <a
-								href="/ERPSoftware/purchaseinvoice/purchaseinvoice/"
+								href="/purchaseinvoice/purchaseinvoice/"
 								target="mainFrame">Purchase Invoice</a></li>
 							<li>&#8250; <a
-								href="/ERPSoftware/productioninvoice/productioninvoice/"
+								href="/productioninvoice/productioninvoice/"
 								target="mainFrame">Production Invoice</a></li>
 
 						</ul></li>
 					<li class="upp"><a href="#">Payments</a>
 						<ul>
 							<li>&#8250; <a
-								href="/ERPSoftware/salesPayment/salesPayment/"
+								href="/salesPayment/salesPayment/"
 								target="mainFrame">Sales Payment</a></li>
 							<li>&#8250; <a
-								href="/ERPSoftware/purchasePayment/purchasePayment/"
+								href="/purchasePayment/purchasePayment/"
 								target="mainFrame">Purchase Payment</a></li>
 								<li>&#8250; <a
-								href="/ERPSoftware/otherPayment/otherPayment/"
+								href="/otherPayment/otherPayment/"
 								target="mainFrame">Other Payments</a></li>
 						</ul></li>
 					<li class="upp"><a href="#">Returns</a>
 						<ul>
-							<li>&#8250; <a href="/ERPSoftware/salesreturn/salesreturn/"
+							<li>&#8250; <a href="/salesreturn/salesreturn/"
 								target="mainFrame">Sales Return</a></li>
 							<li>&#8250; <a
-								href="/ERPSoftware/purchasereturn/purchasereturn/"
+								href="/purchasereturn/purchasereturn/"
 								target="mainFrame">Purchase Return</a></li>
 						</ul></li>
 
-					<li class="upp"><a href="/ERPSoftware/balanceSheet/balanceSheet/"
+					<li class="upp"><a href="/balanceSheet/balanceSheet/"
 						target="mainFrame">Balance Sheet</a></li>
-						<li class="upp"><a href="/ERPSoftware/tools/tools/"
+						<li class="upp"><a href="/tools/tools/"
 						target="mainFrame">Tools</a></li>
 					
 					<li class="upp"><a href="#">Reports</a>
 						<ul>
-							<li>&#8250; <a href="/ERPSoftware/financialReports/FR.html" target="mainFrame">Finance Reports</a></li>
+							<li>&#8250; <a href="/financialReports/FR.html" target="mainFrame">Finance Reports</a></li>
 							<li>&#8250; <a href="" target="mainFrame">Operations Reports</a></li>
-							<li>&#8250; <a href="/ERPSoftware/productReports/PR.html" target="mainFrame">Product Reports</a></li>
-							<li>&#8250; <a href="/ERPSoftware/marketingReports/MR.html" target="mainFrame">Marketing Reports</a></li>
+							<li>&#8250; <a href="/productReports/PR.html" target="mainFrame">Product Reports</a></li>
+							<li>&#8250; <a href="/marketingReports/MR.html" target="mainFrame">Marketing Reports</a></li>
 						</ul></li>
 				</ul>
 			</div>
@@ -149,10 +149,10 @@
 		<!-- </div> -->
 		<table border="0" cellpadding="0" cellspacing="0">
 			<tr valign="top">
-				<td><iframe src="/ERPSoftware/main/links.jsp" id="linksfrm" style="padding-top: 0.5px;"
+				<td><iframe src="/main/links.jsp" id="linksfrm" style="padding-top: 0.5px;"
 						name="sideFrame" frameborder="0" width="140px" height="600px"
 						scrolling="no"></iframe></td>
-				<td><iframe src="/ERPSoftware/main/hello.jsp" name="mainFrame" style="padding: 4px;"
+				<td><iframe src="/main/hello.jsp" name="mainFrame" style="padding: 4px;"
 						frameborder="0" width="800px" height="600px" class="autoHeight"
 						onload="this.width=window.innerWidth-160;this.height=window.innerHeight-80;"></iframe></td>
 			</tr>

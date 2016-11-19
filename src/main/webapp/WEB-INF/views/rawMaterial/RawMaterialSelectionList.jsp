@@ -25,7 +25,7 @@
 		$(".variant" + selected).toggle("slow");
 	});
 	function loadRawMaterials(val) {
-		document.rawMaterialSelection.action = '/ERPSoftware/rawMaterial/RawMaterialSelectionListType/<c:out value="${type}" />/'
+		document.rawMaterialSelection.action = '/rawMaterial/RawMaterialSelectionListType/<c:out value="${type}" />/'
 				+ val;
 		document.rawMaterialSelection.submit();
 	}

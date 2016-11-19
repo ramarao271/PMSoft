@@ -168,7 +168,7 @@ public class ProductController {
 					multipartFile.getOriginalFilename().length());
 			File dest = new File(servletContext.getRealPath("/resources/images/")
 					+ File.separator + product.getProductCode() + fileExt);
-			product.setImagePath("/ERPSoftware/resources/images"
+			product.setImagePath("/resources/images"
 					+ File.separator + product.getProductCode() + fileExt);
 			multipartFile.transferTo(dest);
 			ProductUtilities.saveProduct(product, productService);

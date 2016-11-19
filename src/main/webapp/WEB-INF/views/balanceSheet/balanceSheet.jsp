@@ -71,7 +71,7 @@
 		$("#cityx").autocomplete({
 			source : function(request, response) {
 				$.ajax({
-					url : "/ERPSoftware/balancesheet/listSOCustomers.jsp",
+					url : "/balancesheet/listSOCustomers.jsp",
 					dataType : "json",
 					data : {
 						style : "full",
@@ -110,7 +110,7 @@
 		var items = [];
 		$
 				.ajax({
-					url : "/ERPSoftware/balancesheet/listSOCustomers.jsp",
+					url : "/balancesheet/listSOCustomers.jsp",
 					dataType : "json",
 					data : {
 						style : "full",
@@ -179,7 +179,7 @@
 	{
 		if(checkUpdate())
 			{
-			document.personForm.action = "/ERPSoftware/balanceSheet/updateBalanceSheet/"+id;
+			document.personForm.action = "/balanceSheet/updateBalanceSheet/"+id;
 			document.personForm.method="GET";
 			document.personForm.submit();	
 			}
@@ -195,7 +195,7 @@
 	</h3>
 	<br />
 	<form:form name="personForm" method="POST"
-		action="/ERPSoftware/balanceSheet/saveBalanceSheet.html"
+		action="/balanceSheet/saveBalanceSheet.html"
 		modelAttribute="balanceSheetBean">
 		<table cellpadding="0" cellspacing="5">
 			<tr>

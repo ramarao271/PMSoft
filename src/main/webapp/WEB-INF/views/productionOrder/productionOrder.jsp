@@ -70,7 +70,7 @@
 		$("#cityx").autocomplete({
 			source : function(request, response) {
 				$.ajax({
-					url : "/ERPSoftware/productionorder/listSOWorkers.jsp",
+					url : "/productionorder/listSOWorkers.jsp",
 					dataType : "json",
 					data : {
 						style : "full",
@@ -126,7 +126,7 @@
 	</h3>
 	<br />
 	<form:form name="personForm" method="POST"
-		action="/ERPSoftware/productionorder/saveProductionOrder.html"
+		action="/productionorder/saveProductionOrder.html"
 		modelAttribute="productionOrderBean">
 		<form:hidden path="workerBean.workerId" class="workerId" />
 		<table cellpadding="0" cellspacing="5">
@@ -265,7 +265,7 @@
 	<div class="overlay-bg"></div>
 	<div class="overlay-content popup1">
 		<iframe
-			src="/ERPSoftware/rawMaterial/RawMaterialSelectionList/productionOrderItemBeans"
+			src="/rawMaterial/RawMaterialSelectionList/productionOrderItemBeans"
 			frameborder="0" scrolling="auto" width="95%" height="500px"></iframe>
 	</div>
 </body>

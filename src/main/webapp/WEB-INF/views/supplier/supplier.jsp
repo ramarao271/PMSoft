@@ -22,7 +22,7 @@
 			</c:if> Supplier Details</b>
 	</h3>
 	<form:form name="personForm" method="POST"
-		action="/ERPSoftware/supplier/saveSupplier.html" modelAttribute="supplierBean">
+		action="/supplier/saveSupplier.html" modelAttribute="supplierBean">
 		<table>
 			<tr>
 				<td><form:label path="supplierName">Supplier Name</form:label></td>

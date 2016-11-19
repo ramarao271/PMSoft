@@ -32,7 +32,7 @@
 <body onload="load()">
 	<h4>Variant Properties</h4>
 	<form:form method="POST"
-		action="/ERPSoftware/subVariantProperties/saveSubVariantProperties.html"
+		action="/subVariantProperties/saveSubVariantProperties.html"
 		name="cat">
 		<table>
 			<tr>
@@ -65,9 +65,9 @@
 					<td><c:out
 							value="${subVariantProperties.subVariantPropertiesName}" /></td>
 					<td align="center"><a
-						href="/ERPSoftware/subVariantProperties/editSubVariantProperties.html?subVariantPropertiesId=${subVariantProperties.subVariantPropertiesId}"><img
+						href="/subVariantProperties/editSubVariantProperties.html?subVariantPropertiesId=${subVariantProperties.subVariantPropertiesId}"><img
 							src="${editImg}" /></a> | <a
-						href="/ERPSoftware/subVariantProperties/deleteSubVariantProperties.html?subVariantPropertiesId=${subVariantProperties.subVariantPropertiesId}"
+						href="/subVariantProperties/deleteSubVariantProperties.html?subVariantPropertiesId=${subVariantProperties.subVariantPropertiesId}"
 						onclick="return checkDelete()"><img src="${deleteImg}" /></a></td>
 				</tr>
 			</c:forEach>

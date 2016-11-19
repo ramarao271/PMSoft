@@ -77,7 +77,7 @@
 		$("#cityx").autocomplete({
 			source : function(request, response) {
 				$.ajax({
-					url : "/ERPSoftware/deliverychallan/listDCCustomers.jsp",
+					url : "/deliverychallan/listDCCustomers.jsp",
 					dataType : "json",
 					data : {
 						style : "full",
@@ -109,7 +109,7 @@
 		$("#shipperc").autocomplete({
 			source : function(request, response) {
 				$.ajax({
-					url : "/ERPSoftware/deliverychallan/listDCShippers.jsp",
+					url : "/deliverychallan/listDCShippers.jsp",
 					dataType : "json",
 					data : {
 						style : "full",
@@ -150,7 +150,7 @@
 		var items = [];
 		$
 				.ajax({
-					url : "/ERPSoftware/deliverychallan/listDCCustomers.jsp",
+					url : "/deliverychallan/listDCCustomers.jsp",
 					dataType : "json",
 					data : {
 						style : "full",
@@ -210,7 +210,7 @@
 		var items = [];
 		$
 				.ajax({
-					url : "/ERPSoftware/deliverychallan/listDCShippers.jsp",
+					url : "/deliverychallan/listDCShippers.jsp",
 					dataType : "json",
 					data : {
 						style : "full",
@@ -288,7 +288,7 @@
 	<br />
 
 	<form:form name="personForm" method="POST"
-		action="/ERPSoftware/deliverychallan/saveDeliveryChallan.html"
+		action="/deliverychallan/saveDeliveryChallan.html"
 		modelAttribute="deliveryChallanBean">
 		<form:hidden path="customerBean.customerId" class="customerId" />
 		<form:hidden path="shipperBean.shipperId" class="shipperId" />
@@ -340,7 +340,7 @@
 			<tr>
 				<td>Select Shipper Company</td>
 				<td><form:input path="shipperBean.companyName" id="shipperc" /><a
-					href="/ERPSoftware/shipper/addShipper" target="_blank">New
+					href="/shipper/addShipper" target="_blank">New
 						Shipper</a></td>
 			</tr>
 			<tr>
@@ -483,11 +483,11 @@
 	<div class="overlay-bg"></div>
 	<div class="overlay-content popup1">
 		<iframe
-			src="/ERPSoftware/product/ProductSelectionList/deliveryChallanItemBeans"
+			src="/product/ProductSelectionList/deliveryChallanItemBeans"
 			frameborder="0" scrolling="auto" width="95%" height="350px"></iframe>
 	</div>
 	<div class="overlay-content popup2">
-		<iframe src="/ERPSoftware/salesorder/SalesOrderSelectionList.html"
+		<iframe src="/salesorder/SalesOrderSelectionList.html"
 			frameborder="0" scrolling="auto" width="95%" height="350px"></iframe>
 	</div>
 </body>

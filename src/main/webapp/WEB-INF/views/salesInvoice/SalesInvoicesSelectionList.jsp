@@ -11,7 +11,7 @@
 <title>Insert title here</title>
 <script type="text/javascript">
 	function loadProducts(val) {
-		document.productSelection.action = "/ERPSoftware/product/ProductSelectionList/"
+		document.productSelection.action = "/product/ProductSelectionList/"
 				+ val;
 		document.productSelection.submit();
 	}

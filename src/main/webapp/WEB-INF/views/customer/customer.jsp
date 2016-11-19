@@ -22,7 +22,7 @@
 			</c:if> Customer Details</b>
 	</h3>
 	<form:form name="personForm" method="POST"
-		action="/ERPSoftware/customer/saveCustomer.html" modelAttribute="customerBean">
+		action="/customer/saveCustomer.html" modelAttribute="customerBean">
 		<table>
 			<tr>
 				<td><form:label path="customerName">Customer Name</form:label></td>

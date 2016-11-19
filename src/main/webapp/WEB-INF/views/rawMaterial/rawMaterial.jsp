@@ -19,12 +19,12 @@
 <script type="text/javascript">
 function uploadImage()
 {
-	document.rawMaterialForm.action="/ERPSoftware/rawMaterial/addImage.html";
+	document.rawMaterialForm.action="/rawMaterial/addImage.html";
 	document.rawMaterialForm.submit();	
 }
 function loadIndex(val)
 {
-	document.rawMaterialForm.action = "/ERPSoftware/" +val+"/"+val+"/index.jsp";
+	document.rawMaterialForm.action = "/" +val+"/"+val+"/index.jsp";
 	document.rawMaterialForm.method="GET";
 	document.rawMaterialForm.submit();
 }
@@ -71,7 +71,7 @@ function loadIndex(val)
 		RawMaterial Details
 	</h3>
 	<form:form method="POST"
-		action="/ERPSoftware/rawMaterial/saveRawMaterial.html"
+		action="/rawMaterial/saveRawMaterial.html"
 		modelAttribute="rawMaterialBean" name="rawMaterialForm"
 		id="rawMaterialForm" enctype="multipart/form-data">
 		<form:input path="rawMaterialId" cssStyle="visibility:hidden"
@@ -99,7 +99,7 @@ function loadIndex(val)
 						</c:forEach>
 					</form:select></td>
 				<td><a id="myButton1"
-					href="/ERPSoftware/category/category.html" target="_blank">New
+					href="/category/category.html" target="_blank">New
 						Category</a> <form:errors path="categoryBean" /></td>
 			</tr>
 			<tr>
@@ -126,7 +126,7 @@ function loadIndex(val)
 						</c:forEach>
 					</form:select></td>
 				<td><a id="myButton1"
-					href="/ERPSoftware/measurement/measurement.html" target="_blank">New
+					href="/measurement/measurement.html" target="_blank">New
 						Measurement</a> <form:errors path="measurementBean" /></td>
 			</tr>
 			<tr>

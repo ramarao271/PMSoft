@@ -18,14 +18,14 @@
 <script type="text/javascript">
 function setId(id)
 {
-	document.productForm.action="/ERPSoftware/product/saveProductStages/"+id;
+	document.productForm.action="/product/saveProductStages/"+id;
 	document.productForm.submit();
 }
 </script>
 </head>
 <body>
 	<form:form method="POST"
-		action="/ERPSoftware/product/saveProductStages.html"
+		action="/product/saveProductStages.html"
 		modelAttribute="productBean" name="productForm" id="productForm"
 		enctype="multipart/form-data">
 

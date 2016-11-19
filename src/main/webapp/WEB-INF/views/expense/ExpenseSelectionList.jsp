@@ -26,7 +26,7 @@
 		$(".variant" + selected).toggle("slow");
 	});
 	function loadExpenses(val) {
-		document.expenseSelection.action = '/ERPSoftware/expense/ExpenseSelectionListType/<c:out value="${type}" />/'
+		document.expenseSelection.action = '/expense/ExpenseSelectionListType/<c:out value="${type}" />/'
 				+ val;
 		document.expenseSelection.submit();
 	}

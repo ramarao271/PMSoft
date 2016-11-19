@@ -32,7 +32,7 @@
 <body onload="load()">
 	<h4>Variant Properties</h4>
 	<form:form method="POST"
-		action="/ERPSoftware/variantProperties/saveVariantProperties.html"
+		action="/variantProperties/saveVariantProperties.html"
 		name="cat">
 		<table>
 			<tr>
@@ -75,9 +75,9 @@
 					<td><c:out value="${variantProperties.variantPropertiesType}" /></td>
 					<td><c:out value="${variantProperties.variantPropertiesName}" /></td>
 					<td align="center"><a
-						href="/ERPSoftware/variantProperties/editVariantProperties.html?variantPropertiesId=${variantProperties.variantPropertiesId}"><img
+						href="/variantProperties/editVariantProperties.html?variantPropertiesId=${variantProperties.variantPropertiesId}"><img
 							src="${editImg}" /></a> | <a
-						href="/ERPSoftware/variantProperties/deleteVariantProperties.html?variantPropertiesId=${variantProperties.variantPropertiesId}"
+						href="/variantProperties/deleteVariantProperties.html?variantPropertiesId=${variantProperties.variantPropertiesId}"
 						onclick="return checkDelete()"><img src="${deleteImg}" /></a></td>
 				</tr>
 			</c:forEach>

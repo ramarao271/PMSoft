@@ -71,7 +71,7 @@
 		$("#cityx").autocomplete({
 			source : function(request, response) {
 				$.ajax({
-					url : "/ERPSoftware/purchaseorder/listPOSuppliers.jsp",
+					url : "/purchaseorder/listPOSuppliers.jsp",
 					dataType : "json",
 					data : {
 						style : "full",
@@ -110,7 +110,7 @@
 		var items = [];
 		$
 				.ajax({
-					url : "/ERPSoftware/purchaseorder/listPOSuppliers.jsp",
+					url : "/purchaseorder/listPOSuppliers.jsp",
 					dataType : "json",
 					data : {
 						style : "full",
@@ -189,14 +189,14 @@
 	</h3>
 	<br />
 	<form:form name="personForm" method="POST"
-		action="/ERPSoftware/purchaseorder/savePurchaseOrder.html"
+		action="/purchaseorder/savePurchaseOrder.html"
 		modelAttribute="purchaseOrderBean">
 		<form:hidden path="supplierBean.supplierId" class="supplierId" />
 		<table cellpadding="0" cellspacing="5">
 			<tr>
 				<td>Select Supplier Company</td>
 				<td colspan="3"><form:input path="supplierBean.companyName"
-						id="cityx" /><a id="myButton" href="/ERPSoftware/supplier/addSupplier">New Supplier</a></td>
+						id="cityx" /><a id="myButton" href="/supplier/addSupplier">New Supplier</a></td>
 			</tr>
 			<tr>
 				<td>Company Branch</td>
@@ -331,7 +331,7 @@
 	<div class="overlay-bg"></div>
 	<div class="overlay-content popup1">
 		<iframe
-			src="/ERPSoftware/product/ProductSelectionList/purchaseOrderItemBeans"
+			src="/product/ProductSelectionList/purchaseOrderItemBeans"
 			frameborder="0" scrolling="auto" width="95%" height="500px"></iframe>
 	</div>
 </body>

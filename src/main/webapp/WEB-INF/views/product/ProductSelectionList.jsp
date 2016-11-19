@@ -25,7 +25,7 @@
 		$(".variant" + selected).toggle("slow");
 	});
 	function loadProducts(val) {
-		document.productSelection.action = '/ERPSoftware/product/ProductSelectionListType/<c:out value="${type}" />/'
+		document.productSelection.action = '/product/ProductSelectionListType/<c:out value="${type}" />/'
 				+ val;
 		document.productSelection.submit();
 	}
@@ -74,7 +74,7 @@ body {
 		<table align="left" cellpadding="0" cellspacing="0">
 			<tr>
 				<td colspan="2"><a id="myButton"
-					href="/ERPSoftware/product/addProduct.html">New Product</a></td>
+					href="/product/addProduct.html">New Product</a></td>
 			</tr>
 			<tr>
 				<td colspan="4"><form:select path="categoryBean.categoryId"

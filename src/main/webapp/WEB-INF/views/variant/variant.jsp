@@ -33,7 +33,7 @@
 	<h4>
 		Variant
 	</h4>
-	<form:form method="POST" action="/ERPSoftware/variant/saveVariant.html"
+	<form:form method="POST" action="/variant/saveVariant.html"
 		name="cat">
 		<table>
 			<tr>
@@ -72,9 +72,9 @@
 					<td><c:out value="${variant.variantType}" /></td>
 					<td><c:out value="${variant.variantName}" /></td>
 					<td align="center"><a
-						href="/ERPSoftware/variant/editVariant.html?variantId=${variant.variantId}"><img src="${editImg}" /></a>
+						href="/variant/editVariant.html?variantId=${variant.variantId}"><img src="${editImg}" /></a>
 						| <a
-						href="/ERPSoftware/variant/deleteVariant.html?variantId=${variant.variantId}"
+						href="/variant/deleteVariant.html?variantId=${variant.variantId}"
 						onclick="return checkDelete()"><img src="${deleteImg}" /></a></td>
 				</tr>
 			</c:forEach>

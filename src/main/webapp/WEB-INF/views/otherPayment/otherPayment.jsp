@@ -56,7 +56,7 @@
 		serial = val;
 	}
 	function listInvoices(val) {
-		document.paymentForm.action = "/ERPSoftware/otherPayment/listproductionInvoices/" + val;
+		document.paymentForm.action = "/otherPayment/listproductionInvoices/" + val;
 		document.paymentForm.submit();
 
 	}
@@ -76,7 +76,7 @@
 		$("#cityx").autocomplete({
 			source : function(request, response) {
 				$.ajax({
-					url : "/ERPSoftware/productioninvoice/listSOWorkers.jsp",
+					url : "/productioninvoice/listSOWorkers.jsp",
 					dataType : "json",
 					data : {
 						style : "full",
@@ -131,7 +131,7 @@
 	</h3>
 	<br />
 	<form:form name="paymentForm" method="POST"
-		action="/ERPSoftware/otherPayment/saveOtherPayment.html"
+		action="/otherPayment/saveOtherPayment.html"
 		modelAttribute="otherPaymentBean">
 		<form:hidden path="workerBean.workerId" class="workerId" />
 		<table cellpadding="0" cellspacing="5">
@@ -239,7 +239,7 @@
 	<div class="overlay-bg"></div>
 	<div class="overlay-content popup1">
 		<iframe
-			src="/ERPSoftware/product/ProductSelectionList/otherPaymentItemBeans"
+			src="/product/ProductSelectionList/otherPaymentItemBeans"
 			frameborder="0" scrolling="auto" width="95%" height="350px"></iframe>
 	</div>
 </body>

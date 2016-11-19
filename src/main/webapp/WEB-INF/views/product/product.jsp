@@ -19,12 +19,12 @@
 <script type="text/javascript">
 function uploadImage()
 {
-	document.productForm.action="/ERPSoftware/product/addImage.html";
+	document.productForm.action="/product/addImage.html";
 	document.productForm.submit();	
 }
 function loadIndex(val)
 {
-	document.productForm.action = "/ERPSoftware/" +val+"/"+val+"/index.jsp";
+	document.productForm.action = "/" +val+"/"+val+"/index.jsp";
 	document.productForm.method="GET";
 	document.productForm.submit();
 }
@@ -70,7 +70,7 @@ function loadIndex(val)
 		</c:if>
 		Product Details
 	</h3>
-	<form:form method="POST" action="/ERPSoftware/product/saveProduct.html"
+	<form:form method="POST" action="/product/saveProduct.html"
 		modelAttribute="productBean" name="productForm" id="productForm"
 		enctype="multipart/form-data">
 		<form:input path="productId" cssStyle="visibility:hidden"
@@ -97,7 +97,7 @@ function loadIndex(val)
 							</c:choose>
 						</c:forEach>
 					</form:select></td>
-				<td><a id="myButton1" href="/ERPSoftware/category/category.html" target="_blank">New
+				<td><a id="myButton1" href="/category/category.html" target="_blank">New
 						Category</a> <form:errors path="categoryBean" /></td>
 			</tr>
 			<tr>
@@ -124,7 +124,7 @@ function loadIndex(val)
 						</c:forEach>
 					</form:select></td>
 				<td><a id="myButton1"
-					href="/ERPSoftware/measurement/measurement.html" target="_blank">New
+					href="/measurement/measurement.html" target="_blank">New
 						Measurement</a> <form:errors path="measurementBean" /></td>
 			</tr>
 			<tr>

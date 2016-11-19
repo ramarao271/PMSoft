@@ -70,7 +70,7 @@
 		$("#cityx").autocomplete({
 			source : function(request, response) {
 				$.ajax({
-					url : "/ERPSoftware/salesPayment/listSPCustomers.jsp",
+					url : "/salesPayment/listSPCustomers.jsp",
 					dataType : "json",
 					data : {
 						style : "full",
@@ -111,7 +111,7 @@
 		var items = [];
 		$
 				.ajax({
-					url : "/ERPSoftware/salesPayment/listSPCustomers.jsp",
+					url : "/salesPayment/listSPCustomers.jsp",
 					dataType : "json",
 					data : {
 						style : "full",
@@ -193,7 +193,7 @@
 	</h3>
 	<br />
 	<form:form name="paymentForm" method="POST"
-		action="/ERPSoftware/salesPayment/saveSalesPayment.html"
+		action="/salesPayment/saveSalesPayment.html"
 		modelAttribute="salesPaymentBean">
 		<form:hidden path="customerBean.customerId" class="customerId" />
 		<table cellpadding="0" cellspacing="5">
@@ -294,7 +294,7 @@
 
 	<div class="overlay-bg"></div>
 	<div class="overlay-content popup1">
-		<iframe src="/ERPSoftware/product/ProductSelectionList/salesPaymentItemBeans"
+		<iframe src="/product/ProductSelectionList/salesPaymentItemBeans"
 			frameborder="0" scrolling="auto" width="95%" height="350px"></iframe>
 	</div>
 </body>

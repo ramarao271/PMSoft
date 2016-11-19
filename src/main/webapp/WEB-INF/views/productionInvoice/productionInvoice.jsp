@@ -71,7 +71,7 @@
 		$("#cityx").autocomplete({
 			source : function(request, response) {
 				$.ajax({
-					url : "/ERPSoftware/productioninvoice/listSOWorkers.jsp",
+					url : "/productioninvoice/listSOWorkers.jsp",
 					dataType : "json",
 					data : {
 						style : "full",
@@ -126,7 +126,7 @@
 	</h3>
 	<br />
 	<form:form name="personForm" method="POST"
-		action="/ERPSoftware/productioninvoice/saveProductionInvoice.html"
+		action="/productioninvoice/saveProductionInvoice.html"
 		modelAttribute="productionInvoiceBean">
 		<form:hidden path="workerBean.workerId" class="workerId" />
 		<table cellpadding="0" cellspacing="5">
@@ -316,12 +316,12 @@
 	<div class="overlay-bg"></div>
 	<div class="overlay-content popup2">
 		<iframe
-			src="/ERPSoftware/productionorder/ProductionOrderSelectionList/"
+			src="/productionorder/ProductionOrderSelectionList/"
 			frameborder="0" scrolling="auto" width="95%" height="500px"></iframe>
 	</div>
 	<div class="overlay-content popup1">
 		<iframe
-			src="/ERPSoftware/product/ProductSelectionList/productionInvoiceItemBeans"
+			src="/product/ProductSelectionList/productionInvoiceItemBeans"
 			frameborder="0" scrolling="auto" width="95%" height="500px"></iframe>
 	</div>
 
