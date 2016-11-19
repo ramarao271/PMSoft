@@ -2,7 +2,6 @@ package org.erp.tarak.purchaseorder;
 
 import java.util.List;
 
-import org.erp.tarak.product.Product;
 import org.hibernate.Criteria;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Restrictions;

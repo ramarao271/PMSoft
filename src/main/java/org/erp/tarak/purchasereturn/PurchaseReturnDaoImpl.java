@@ -3,7 +3,6 @@ package org.erp.tarak.purchasereturn;
 import java.util.Date;
 import java.util.List;
 
-import org.erp.tarak.salesinvoice.SalesInvoice;
 import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.hibernate.SessionFactory;

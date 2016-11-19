@@ -7,13 +7,12 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import org.hibernate.HibernateException;
-import org.hibernate.engine.spi.SessionImplementor;
+import org.hibernate.engine.spi.SharedSessionContractImplementor;
 import org.hibernate.id.IdentifierGenerator;
 
 public class BalanceSheetIdGenerator implements IdentifierGenerator {
 
-	@Override
-	public Serializable generate(SessionImplementor HiSession, Object object)
+	public Serializable generate(SharedSessionContractImplementor HiSession, Object object)
 			throws HibernateException {
 		Connection connection = HiSession.connection();
 		try {
@@ -52,4 +51,5 @@ public class BalanceSheetIdGenerator implements IdentifierGenerator {
 
 		return null;
 	}
+
 }

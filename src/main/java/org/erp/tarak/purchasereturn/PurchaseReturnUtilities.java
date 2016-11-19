@@ -4,8 +4,6 @@ import java.util.LinkedList;
 import java.util.List;
 
 import org.erp.tarak.category.CategoryService;
-import org.erp.tarak.supplier.SupplierService;
-import org.erp.tarak.supplier.SupplierUtilities;
 import org.erp.tarak.measurement.MeasurementService;
 import org.erp.tarak.product.Product;
 import org.erp.tarak.product.ProductBean;
@@ -14,6 +12,8 @@ import org.erp.tarak.purchaseinvoice.PurchaseInvoice;
 import org.erp.tarak.purchaseinvoice.PurchaseInvoiceBean;
 import org.erp.tarak.purchaseinvoice.PurchaseInvoiceService;
 import org.erp.tarak.purchaseinvoice.PurchaseInvoiceUtilities;
+import org.erp.tarak.supplier.SupplierService;
+import org.erp.tarak.supplier.SupplierUtilities;
 import org.erp.tarak.user.UserBean;
 import org.erp.tarak.variant.VariantService;
 

@@ -5,9 +5,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 import org.erp.tarak.category.CategoryReport;
+import org.erp.tarak.product.Product;
 import org.erp.tarak.supplier.Supplier;
 import org.erp.tarak.variant.VariantReport;
-import org.erp.tarak.product.Product;
 import org.hibernate.Query;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Restrictions;

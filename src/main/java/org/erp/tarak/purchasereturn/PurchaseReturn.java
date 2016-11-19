@@ -20,8 +20,8 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-import org.erp.tarak.supplier.Supplier;
 import org.erp.tarak.purchaseinvoice.PurchaseInvoice;
+import org.erp.tarak.supplier.Supplier;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 import org.hibernate.annotations.GenericGenerator;
